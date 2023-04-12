@@ -29,7 +29,8 @@ public class LlTiendaIncienso2023ApplicationTests {
 	String EmailERROR2 = "hdkhkal.gmailcom";
 	String EmailERROR3 = "@gmail.com";
 	
-	
+	String texook = "";
+	String textoerr = "hdkhkal@gmail";
 	
 	// prueba del primer metodo , se crea una var estatica por cada clase
 	private static Validator validar;
@@ -72,7 +73,11 @@ public class LlTiendaIncienso2023ApplicationTests {
 		
 	}
 	
-	
+	@Test
+	void  isVacioTest() {
+		assertTrue(validar.isVacio(texook));
+		assertFalse(validar.isVacio(textoerr));
+	}
 	
 
 }
