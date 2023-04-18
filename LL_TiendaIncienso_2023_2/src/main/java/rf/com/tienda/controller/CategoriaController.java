@@ -20,7 +20,7 @@ import rf.com.tienda.servicio.ICategoria;
 
 @RestController
 @RequestMapping("/categorias")
-public class CategoriaController {
+public class CategoriaController { 
 
 @Autowired	
 	private ICategoria catServicio;
